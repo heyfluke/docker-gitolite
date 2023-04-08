@@ -39,3 +39,7 @@ else
 fi
 
 exec "$@"
+
+if [ "${1}" = 'sshd' ]; then
+  cat
+fi

@@ -20,7 +20,7 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 EXPOSE 22
 
 # Default command is to run the SSH server
-# CMD ["sshd"]
-COPY fg_run.sh /
-RUN chmod +x fg_run.sh
-CMD ["/fg_run.sh"]
+CMD ["sshd"]
+# COPY fg_run.sh /
+# RUN chmod +x fg_run.sh
+# CMD ["/fg_run.sh"]
